@@ -1,14 +1,12 @@
 package ru.job4j.converter;
 
 import org.junit.jupiter.api.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.withPrecision;
+import static org.assertj.core.api.Assertions.*;
 
 class ConverterTest {
 
     @Test
-    void rubleToEuro() {
+    void whenConvert140RblThen2Euro() {
         float in = 140;
         float expected = 2;
         float out = Converter.rubleToEuro(in);
@@ -17,7 +15,7 @@ class ConverterTest {
     }
 
     @Test
-    void rubleToDollar() {
+    void whenConvert259RblThen4dot3166Dollar() {
         float in = 259;
         float expected = 4.3166f;
         float out = Converter.rubleToDollar(in);
