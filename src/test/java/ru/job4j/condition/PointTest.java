@@ -7,6 +7,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import org.junit.jupiter.api.Test;
 
 class PointTest {
+
     @Test
     void when96To74Then2Dot82() {
         double expected = 2.82;
